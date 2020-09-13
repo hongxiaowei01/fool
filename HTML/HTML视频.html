@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML视频 音频元素</title>
+		<style type="text/css">
+			.one1{
+				background-color: #87CEEB;
+				border: 1px solid #EE82EE;
+				width: 300px;
+				height:80px;
+			}
+		</style>
+	</head>
+	<body>
+		<video width="400px" height="400px" controls="controls" autoplay="autoplay" loop="loop">
+			<source src="../image/01.mp4" type="video/mp4"></source>
+			<source src="../image/01.mp4" type="video/ogg"></source>
+			<source src="../image/01.mp4" type="video/webm"></source>
+			当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+		</video>
+		<div class="one1">
+		<p>吹梦到西洲</p>
+		<audio  controls="controls" loop="loop" perload="perload">
+			<source src="../image/黄小喵%20%20%20息夜%20%20清茗%20%20云出%20-%20吹梦到西洲.mp3" type="audio/mp3">
+			<source src="../image/黄小喵%20%20%20息夜%20%20清茗%20%20云出%20-%20吹梦到西洲.ogg" type="audio/ogg">
+			当前浏览器不支持audio
+		</audio>
+		</div>
+	</body>
+</html>

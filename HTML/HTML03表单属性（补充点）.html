@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML03表单属性（补充点）</title>
+	</head>
+	<body>
+		<form action="" method="post" id="myform">
+			姓名：<input type="text" name="haha"  value="haha" autofocus="ture" /><br><!--文本输入自动获取焦点-->
+			
+			<input list="father" name="father"/>
+			<datalist id="father">
+				<option value ="华为"></option>
+			</datalist>
+			<input type="submit" name="提交" /><br><!--list属性将datalist元素进行绑定，只要其list属性值和datalist元素的ID值相同就可以进行绑定-->
+			
+			<input type="email" name="hanhan" multiple="multiple" /><!--multiple属性指定输入框可以输入多个值，适用于file和email地址类型使用-->
+			
+			<input type="number" name="daodao"  min="0" max="100" step="2"/><!--max min step属性指定输入框可以输入的最大值，最小值 还有数字间隔-->
+		</form>
+		
+		    密码：<input type="password" name="haha" form="myform" /><!--form属性使在外部的表单输入框也可以绑定在表单域内部 form值为表单域的ID即可被包含进去-->
+	</body>
+</html>

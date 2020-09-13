@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>03字体样式属性</title>
+		<style type="text/css">
+			p{
+				font-size:20px;
+				font-family: "宋体", "微软雅黑";
+				font-weight: bold;
+				font-style: italic;/*font-size:字号的大小，单位：em，px in cm mm pt 
+font-famliy:定义字体，多个使用的时候用逗号隔开 英文不用引号写在前面
+font-style:字体风格，normal(正常) italic（斜体）oblique（斜体)
+font-weight:字体的粗细，normal（正常）bold（粗体）border（更粗体）lighter（更细）单位100-900*/
+				}
+			h2{
+				font: italic bold 20px/30px "宋体" ;/*字体的综合样式--顺序style weight size/line-height(必写) family（必写)*/
+				}
+			
+			
+			
+			@font-face {
+				font-family:ONYX;
+				src:url(../font/FZJZJW.TTF);/*1自定义字体2给字体命名3字体的路径*/	
+			}
+			h3{
+				font-family:ONYX;
+				font-size: 3.125rem;
+				color: hotpink;/*定义完之后就可以用了*/
+			}
+		</style>
+	</head>
+	<body>
+		<p >字体样式属性</p>
+		<h2>字体样式属性</h2>
+		<h3>字体样式属性</h3>
+		
+	</body>
+</html>

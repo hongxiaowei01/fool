@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS3 过渡效果</title>
+		<style type="text/css">
+			div{
+				width:200px;
+				height:200px;
+				border: 1px solid black;
+				background-color: aquamarine;
+				margin: 20px;
+				position:relative;<!--要使动画动起来要有定位属性position 属性值为相对定位relative-->
+				
+				transition-property:width transform;
+				-webkit-transition-property:width transform;<!--transition-property属性为指定过渡属性的名称-->
+				
+				transition-duration:2s;
+				-webkit-transition-duration:2s;<!--transition-duration属性为指定过渡属性的一个周期-->
+				
+				transition-timing-function:ease;
+				-webkit-transition-timing-function:ease;<!--transition-timing-function属性为指定周期如何变化的速度曲线-->
+				
+				transition-delay:0.1s;
+				-webkit-transition-delay:0.1s;<!--transition-dalay属性为指定过渡属性的周期何时开始-->
+			}
+			#one:hover{
+				width:300px;
+				transform:rotatex(180deg) rotatey(180deg)  rotatez(180deg);
+				-ms-transform:rotatex(180deg) rotatey(180deg) rotatez(180deg);
+				-webkit-transform:rotatex(180deg) rotatey(180deg)  rotatez(180deg);<!--错误点transform属性写多个属性值的时候必须用空格隔开，不用逗号-->
+			}
+			#two:hover{
+				transform:translatex(200px) translatey(200px);
+				-ms-transform:translatex(200px) translatey(200px);
+				-webkit-transform:translatex(200px) translatey(200px);
+			}
+			#three:hover{
+				
+				transform:scalex(2) scaley(2);
+				-ms-transform:scalex(2) scaley(2);
+				-webkit-transform:scalex(2) scaley(2);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="one">Hello word</div>
+		<div id="two">跑路咯</div>
+		<div id="three">奥特曼来了</div>
+	</body>
+</html>

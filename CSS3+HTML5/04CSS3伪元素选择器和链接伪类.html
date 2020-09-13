@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>04CSS伪元素选择器和链接伪类</title>
+		<style type="text/css">
+		.one:before{
+			content:url(../image/3.png);/*元素文本前面加*/
+		}
+		.two:after{
+			content: url(../image/JL.png);/*元素文本后边加*/
+		}
+		a:any-link{
+			color: #00FFFF;
+		    text-decoration:none;/*来访问时 link链接伪类失效 any-link链接伪类成功*/
+		}
+		a:hover{
+			color:#ADFF2F;/*悬停时*/
+		}
+		a:active{
+			color:hotpink;/*击不动时*/
+		}
+		a:visited{
+			color:#8A2BE2;/*访问后*/
+		}
+	    p:target{
+			background-color: red;
+			width: 400px;
+			height:18px;
+		}
+		</style>
+	</head>
+	<body>
+		<a href="#three">224234234</a>
+		<p class="one"> 所以，做人不一定要顶天立地，
+		轰轰烈烈，但一定要善良真诚</p>
+		<p class="two"><a href="#four">3412341</a>所以，做人不一定要顶天立地，
+		轰轰烈烈，但一定要善良真诚</p>
+		<p id="three">3</p>
+		<p id="four">4</p>
+	</body>
+</html>

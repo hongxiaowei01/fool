@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>04CSS结构化伪类选择器02</title>
+		<style type="text/css">
+			p:first-child{
+				color:red;
+				font-size:30px;/*控制第一个*/
+			}
+			p:last-child{
+				color:hotpink;
+				font-size: 33px;/*失效 控制倒数第一个*/
+			}
+			p:nth-child(2){
+				color: pink;
+				font-size: 40px;/*控制第二个*/
+			}
+			p:nth-last-child(2){
+				color: #00FFFF;
+				font-size:45px;/*失效 控制倒数第二个*/
+			}
+			p:nth-of-type(3){
+				color:#87CEEB;
+				font-size: 50px;/*控制第三个*/
+			}
+			p:nth-last-of-type(3){
+				color: #8B0000;
+				font-size:55px;/*控制倒数第三个*/
+			}
+			h2:empty{
+				width: 400px;
+				height: 35px;
+				background-color: aqua;/*控制空元素的选择器*/
+			}
+			p:target{
+				width: 400px;
+				height: 60pxpx;
+				background-color: greenyellow;/*控制链接跳转的样式*/
+			}
+			</style>
+	</head>
+	<body>
+		<p><a href="#new1">2</a>1</p>
+		<p><a href="#new2">3</a>2</p>
+		<p id="new1">3</p>
+		<p id="new2">4</p>
+		<h2>7</h2>
+		<p>5</p>
+		<p></p>
+		<h2></h2>
+	</body>
+</html>

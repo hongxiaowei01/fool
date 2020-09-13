@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>04CSS结构化伪类选择器</title>
+		<style type="text/css">
+			body *:not(p){
+				color:deeppink;
+				font-size:40px;
+			}
+			:root{
+				color:darkred;
+				font-size: 49px;
+			}
+			li:only-child{
+				color:#00FFFF;
+				font-size: 45px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+		<ul>
+			<li>4</li>
+		</ul>
+		<ul>
+			<li>5</li>
+			<li>6</li>
+		</ul>
+		<h2>4</h2>
+		<p>1</p>
+		<h2>2</h2>
+		<h2>5</h2>
+	</body>
+</html>

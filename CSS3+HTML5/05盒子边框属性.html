@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>05盒子边框属性</title>
+		<style type="text/css">
+			p.one{
+				width:200px;
+				height:200px;
+				background-color: #87CEEB;
+				border-style:solid;
+				border-width:10px;
+				border-color: #FFC0CB;</普通写法/>
+			}
+			p.two{
+				width:200px;
+				height:200px;
+				background-color: #87CEEB;
+				border:10px solid #FFC0CB;</综合写法/>
+			}
+			p.three{
+				width:200px;
+				height:200px;
+				background-color: #87CEEB;
+				border-width:10px 10px;
+				border-style:solid double;
+				border-color:pink green;</上下 左右写法/>
+			}
+			p.four{
+				width:200px;
+				height:200px;
+				background-color: #87CEEB;
+				border-width:10px 10px 10px;
+				border-style: solid double dotted;
+				border-color:blue red green;</上 左右 下写法/>
+			}
+			p.five{
+				width:200px;
+				height:200px;
+				background-color:#FFC0CB;
+				border-width:10px 10px 10px 10px;
+				border-style:dashed solid double dotted;
+				border-color:forestgreen #87CEEB #8A2BE2 #ADFF2F;</上 右 下 左写法/>
+			}
+			p.six{
+				width:200px;
+				height:200px;
+				background-color: #87CEEB;
+				border-top:20px solid #228B22;
+				border-right:20px double #228B22;
+				border-bottom:30px dotted blueviolet;
+				border-left:20px dashed #FF0000;</单边综合写法/>
+			}
+			p.seven{
+			    width:200px;
+				height:200px;
+				background-color:hotpink ;
+				border:3px solid black;
+				border-radius: 100px/100px;</圆角边框写法/>
+			}
+		</style>
+	</head>
+	<body>
+		<p class="one"></p>
+		<p class="two"></p>
+		<p class="three"></p>
+		<p class="four"></p>
+		<p class="five"></p>
+		<p class="six"></p>
+		<p class="seven"></p>
+	</body>
+</html>

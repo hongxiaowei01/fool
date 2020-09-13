@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS3关系选择器</title>
+		<style type="text/css">
+			p+h2{
+				color: red;
+				font-size: 50px;/*临近兄弟选择器，以加号后面加下一个标签，意思为选择这个标签的下一位标签*/
+				
+			}
+			h2.one~h2{
+				color:pink;
+				font-size: 49px;/*普通兄弟选择器,以~号后面加后续的h2标签,选择后面的所有的h2标签*/
+			}
+			p>strong{
+				color: skyblue;
+				font-size:40px;
+			}
+			em>strong{
+				color:#9932CC;
+				font-size: 60px;/*子代选择器，以>号后面加上下一个子元素，选择父元素里面的第一级子元素*/
+			}
+			
+		</style>
+	</head>
+	<body>
+		<p><strong>2</strong>1 <em><strong>4</strong>2</em></p>
+		<h2 class="one">2</h2>
+		<h2>3</h2>
+		<p>3
+		</p>
+		<h2>4</h2>
+	</body>
+</html>

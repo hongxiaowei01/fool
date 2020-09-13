@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				background-color: #E9E9E9;
+				width:100%;
+				height:100%;
+			}
+			#one{position:relative;
+				width:200px;
+				height:350px;
+				border:1px solid #000000;
+				background-color:white;
+				border-radius:20px 20px 5px 5px;
+				margin:100px auto;
+				box-shadow: 1px 1px 12px 5px #AAAAAA;
+				z-index: 1;
+			}
+			#one:before{
+				content: "";
+				width:49px;
+				height:10px;
+				border:1px solid #000000;
+				border-radius:4px 4px 0 0;
+				background-color:#E9E9E9;
+				position:absolute;
+				top:-12px;
+				left:40%;
+			}
+			#one11{
+				   position:absolute;
+				   top:92%;
+				   left: -0.4px;
+				   width:201px;
+				   height:30px;
+				   border-radius:0 0 5px 5px;
+				   background: linear-gradient(to bottom, #7abcff 0%, #00BCD4 44%, #2196F3 100%);
+				   animation:hihi 15s;
+				   animation-timing-function: linear;
+				   animation-iteration-count:infinite;
+				   filter:hue-rotate(90deg);
+			}
+			#two{
+				position: absolute;
+				width:200px;
+				height:350px;
+				top:20%;left:40%;
+				background-color: #00FFFF;
+				overflow: hidden; 
+				
+			}
+			#two>div{
+				width:400px;
+				height:400px;
+				border:1px solid white;
+				background-color:  white;
+				opacity:0.7;
+				position:absolute;
+				top:-100px;
+				right:-80px;
+				animation:hehe 8s;
+				animation-iteration-count: infinite;
+				animation-timing-function:linear;
+			}
+			#one1{
+				border-radius: 47%;
+			}
+			#one2{
+				border-radius: 45%;
+			}
+			#one3{
+				border-radius: 39%;
+			}
+			@keyframes huihui{
+				from{transform:rotatez(0deg);}
+				to{transform:rotatez(360deg);}
+			}
+			@keyframes hihi{
+				10%{top:90%;height:35px;}
+				50%{top:50%;height:175px;filter:hue-rotate(60deg);}
+				95%{top:5%;height:333.5px;border-radius:10px 10px 5px 5px;filter:hue-rotate(0deg);}
+				100%{top:0%; height:350px;border-radius: 20px 20px 5px 5px;filter:hue-rotate(0deg);}
+				}
+			@keyframes hehe{
+				from{transform:translatey(40px) rotatez(0deg);}
+				to{transform:translatey(-275px) rotatez(360deg);}
+			}	
+		</style>
+	</head>
+	<body>
+		
+		<div id="two">
+		<div id="one1"></div>
+		<div id="one2"></div>
+		<div id="one3"></div>
+		</div>
+	</body>
+</html>

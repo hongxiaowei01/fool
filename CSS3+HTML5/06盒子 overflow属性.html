@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>06盒子 overflow属性</title>
+		<style type="text/css">
+			.one{
+				width: 200px;
+				height:200px;
+				border:1px solid #000000;
+				background-color: #87CEEB;
+				overflow: visible;
+				margin:80px;<!--默认值-->
+			}
+			.two{
+				width: 200px;
+				height:200px;
+				border:1px solid #000000;
+				background-color: #87CEEB;
+				overflow: hidden;
+				margin:80px;<!--修剪溢出的部分-->
+			}
+			.three{
+				width: 200px;
+				height:200px;
+				border:1px solid #000000;
+				background-color: #87CEEB;
+				overflow: auto;
+				margin:80px;<!--文本超出部分加上滚动条-->
+			}
+			.four{
+				width: 200px;
+				height:200px;
+				border:1px solid #000000;
+				background-color: #87CEEB;
+				overflow: scroll;
+				margin:80px;<!--文本不管有没有超出部分都加上滚动条-->
+			}
+		</style>
+	</head>
+	<body>
+		<p class="one">
+			 相信生活、相信自己罢，因为只有你是真实的，
+			 也只有你才能创造你自己! 相信爱情，期待上天把一份最美好的礼物赐给我!
+			 爱总是最自然、最美好的。爱是人心里最柔软的情感!爱情能产生巨大的力量：
+			 使我重新产生要活下去的信念;使我产生自信、自尊和自爱;
+			 使我懂得去关心和呵护亲人;使我对未来充满无限的憧憬和热爱!
+		</p>
+		<p class="two">
+			 相信生活、相信自己罢，因为只有你是真实的，
+			 也只有你才能创造你自己! 相信爱情，期待上天把一份最美好的礼物赐给我!
+			 爱总是最自然、最美好的。爱是人心里最柔软的情感!爱情能产生巨大的力量：
+			 使我重新产生要活下去的信念;使我产生自信、自尊和自爱;
+			 使我懂得去关心和呵护亲人;使我对未来充满无限的憧憬和热爱!
+		</p>
+		<p class="three">
+			 相信生活、相信自己罢，因为只有你是真实的，
+			 也只有你才能创造你自己! 相信爱情，期待上天把一份最美好的礼物赐给我!
+			 爱总是最自然、最美好的。爱是人心里最柔软的情感!爱情能产生巨大的力量：
+			 使我重新产生要活下去的信念;使我产生自信、自尊和自爱;
+			 使我懂得去关心和呵护亲人;使我对未来充满无限的憧憬和热爱!
+		</p>
+		<p class="four">
+			 相信生活、相信自己罢，因为只有你是真实的，
+			 也只有你才能创造你自己! 相信爱情，期待上天把一份最美好的礼物赐给我!
+		</p>
+	</body>
+</html>

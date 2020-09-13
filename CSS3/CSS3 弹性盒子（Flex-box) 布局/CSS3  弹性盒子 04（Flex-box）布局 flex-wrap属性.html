@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS3 弹性盒子（Flex-box）布局04 flex-wrap属性</title>
+		<style type="text/css">
+			#one{
+				width:300px;
+				height:300px;
+				border:1px solid #000000;
+				background-color: #2393F1;
+				display:flex;
+				align-items:flex-start;
+				flex-wrap: wrap;
+			}
+			#one>div{
+				width:100px;
+				height:100px;
+				border:1px solid #000000;
+				background-color: greenyellow;
+			}
+			#two{
+				width:300px;
+				height:300px;
+				border:1px solid #000000;
+				background-color: #2393F1;
+				display:flex;
+				align-items:flex-start;
+				flex-wrap: nowrap;
+			}
+			#two>div{
+				width:100px;
+				height:100px;
+				border:1px solid #000000;
+				background-color: greenyellow;
+			}
+			#three{
+				width:300px;
+				height:300px;
+				border:1px solid #000000;
+				background-color: #2393F1;
+				display:flex;
+				align-items:flex-start;
+				flex-wrap: wrap-reverse;
+			}
+			#three>div{
+				width:100px;
+				height:100px;
+				border:1px solid #000000;
+				background-color: greenyellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="one">
+			<div class="one">1</div>
+			<div class="two">2</div>
+			<div class="three">3</div>
+		</div>
+		<div id="two">
+			<div class="one">1</div>
+			<div class="two">2</div>
+			<div class="three">3</div>
+		</div>
+		<div id="three">
+			<div class="one">1</div>
+			<div class="two">2</div>
+			<div class="three">3</div>
+		</div>
+	</body>
+</html>

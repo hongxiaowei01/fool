@@ -1,0 +1,14 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	font-size: 12px;
+	font-family: "宋体";
+}
+.bg{
+	width:1431px;
+	height:717px;
+	background:url(./images/form_bg.jpg);
+}

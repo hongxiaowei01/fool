@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS3D动画方块转动</title>
+		<style type="text/css">
+			body{
+				background-color: black;
+			}
+			
+			#one{
+				position: absolute;
+				top:50%;
+				left:50%;
+				animation:aimi 15s linear infinite ;
+				transform-style: preserve-3d;
+			}
+			#one>div{
+				position:absolute;
+				width:200px;
+				height:200px;
+				border:2px solid red;
+				background-color: #00FFFF;
+				background-size: 200px,200px;
+				border-radius: 10%;
+				opacity:0.99;
+				margin:auto;
+			}
+			#one1{
+				background-image: url(../image/43a473475d47dd3660b8587485999c23.jpg);
+				background-size: 200px 200px;
+				transform:rotatex(90deg) translatez(120px);
+			}
+			#one2{
+				background-image: url(../image/51e7259d180e6ccd9c16a8ba95b228d7.jpg);
+				background-size: 200px,200px;
+				transform:rotatex(90deg) translatez(-120px);
+			}
+			#one3{
+				background-image: url(../image/5bf8e9cd35d5eb3e89fe6db3e5b13e2e.jpg);
+				background-size: 200px 200px;
+				transform:rotatey(90deg) translatez(120px);
+			}
+			#one4{
+				background-image: url(../image/0c6ec27910a608a64762bfadd333b5bb.jpeg);
+				background-size:200px 200px;
+				transform:rotatey(90deg) translatez(-120px);
+			}
+			#one5{
+				background-image: url(../image/213f5f3378ecfa1742658c3521a3207b.jpg);
+				background-size: 200px 200px;
+				transform:translatez(120px);
+			}
+			#one6{
+				background-image:url(../image/e979eaf100473a21f0c9bf67f8e0bf11.jpg) ;
+				background-size: 200px 200px;
+				transform:translatez(-120px);
+			}
+			@keyframes aimi{
+				from{transform:rotatex(0deg) rotatey(0deg) rotatez(0deg);}
+				to{transform:rotatex(360deg) rotatey(360deg) rotatez(360deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="one">
+		<div id="one1"></div>
+		<div id="one2"></div>
+		<div id="one3"></div>
+		<div id="one4"></div>
+		<div id="one5"></div>
+		<div id="one6"></div>
+		</div>
+	</body>
+</html>

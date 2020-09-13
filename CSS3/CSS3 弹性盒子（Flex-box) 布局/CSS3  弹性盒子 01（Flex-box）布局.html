@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS3 弹性盒子(Flex-box)布局01 flex-direction属性</title>
+		<style type="text/css">
+			#one{
+				display: flex;
+				width:300px;
+				height:300px;
+				border:1px solid #000000;
+				background:pink;
+				flex-direction:row;<!--要使用弹性盒子必须先定义它为弹性盒子：displa：flex；属性flex-direction为弹性盒子定义好弹性子元素的放置的方向，属性值为row定义弹性子元素的放置在弹性盒子左上方靠近边界的地方--> 
+			}
+			#one>div{
+				display:inline-block;
+				width:80px;
+				height:80px;
+				border:1px solid #000000;
+				background-color:#00FFFF ; 
+			}
+			#two{
+				display:flex;
+				width:300px;
+				height:300px;
+				border:1px solid #000000;
+				background:pink;
+				flex-direction:row-reverse;<!--属性flex-direction为弹性盒子定义好弹性子元素的放置的方向，属性值为row-reverse定义弹性子元素的放置在弹性盒子右上方靠近边界的地方并且反方向排序--> 
+			}
+			#two>div{
+				width:80px;
+				height:80px;
+				border:1px solid #000000;
+				background-color:#00FFFF ;
+			}
+			#three{
+				display:inline-flex;
+				width:300px;
+				height:300px;
+				border:1px solid #000000;
+				background:pink;
+				flex-direction:column;<!--属性flex-direction为弹性盒子定义好弹性子元素的放置的方向，属性值为column定义弹性子元素的放置在弹性盒子左下方靠近边界--> 
+			}
+          	#three>div{
+				width:80px;
+				height:80px;
+				border:1px solid #000000;
+				background-color:#00FFFF ;
+			}
+			#four{
+				display:flex;
+				width:300px;
+				height:300px;
+				border:1px solid #000000;
+				background:pink;
+				flex-direction:column-reverse;<!--属性flex-direction为弹性盒子定义好弹性子元素的放置的方向，属性值为column-reverse定义弹性子元素的放置在弹性盒子纵向排列左上方靠近边界--> 
+			}
+			#four>div{
+				width:80px;
+				height:80px;
+				border:1px solid #000000;
+				background-color:#00FFFF ;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="one">
+			<div class="one">1</div>
+			<div class="two">2</div>
+			<div class="three">3</div>
+		</div>
+		<div id="two">
+			<div class="one">1</div>
+			<div class="two">2</div>
+			<div class="three">3</div>
+		</div>
+		<div id="three">
+			<div class="one">1</div>
+			<div class="two">2</div>
+			<div class="three">3</div>
+		</div>
+		<div id="four">
+			<div class="one">1</div>
+			<div class="two">2</div>
+			<div class="three">3</div>
+		</div>
+		<div id="five"></div>
+		<div id="six"></div>
+		<div id="seven"></div>
+		<div id="eight"></div>
+		<div id="nine"></div>
+		<div id="ten"></div>
+		
+	</body>
+</html>

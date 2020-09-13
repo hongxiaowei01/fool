@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>06盒子浮动的清除方法</title>
+		<style type="text/css">
+		#child01{
+			width:400px;
+			height:400px;
+			border:1px solid #000000;
+			background-color: #87CEEB;
+			margin: 10px;
+		}
+		#child02{
+			border:1px solid #000000;
+			background-color: #2E8B57;
+		}
+		#child02 div{
+			height:30px;
+			line-height:30px;
+			background-color: #FFC0CB;
+			border:1px solid #000000;
+			padding:0 10px;
+			margin:10px;
+			float:left;
+		}
+		
+		
+		#child03{
+			width:400px;
+			height:400px;
+			border:1px solid #000000;
+			background-color: #87CEEB;
+			margin: 10px;
+		}
+		#child04{
+			border:1px solid #000000;
+			background-color: #2E8B57;
+		}
+		#child04 div{
+			height:30px;
+			line-height:30px;
+			background-color: #FFC0CB;
+			border:1px solid #000000;
+			padding:0 10px;
+			margin:10px;
+			float:left;
+		}
+		p{
+			clear: both;<!--清除浮动方法一：加空元素法-->
+		}
+		
+		#child05{
+			width:400px;
+			height:400px;
+			border:1px solid #000000;
+			background-color: #87CEEB;
+			margin: 10px;
+		}
+		#child06{
+			border:1px solid #000000;
+			background-color: #2E8B57;
+			overflow: hidden;
+		}
+		#child06 div{
+			height:30px;
+			line-height:30px;
+			background-color: #FFC0CB;
+			border:1px solid #000000;
+			padding:0 10px;
+			margin:10px;
+			float:left;<!--清除浮动方法二：加overflow法 在父元素css样式里加上overflow：hidden-->
+		}
+		
+		
+		#child07{
+			width:400px;
+			height:400px;
+			border:1px solid #000000;
+			background-color: #87CEEB;
+			margin: 10px;
+		}
+		#child08:after{
+			content:"";
+			display:block;
+			visibility:hidden;
+			height:0;
+			clear:both;
+		}
+		#child08{
+			border:1px solid #000000;
+			background-color: #2E8B57;
+		}
+		#child08 div{
+			height:30px;
+			line-height:30px;
+			background-color: #FFC0CB;
+			border:1px solid #000000;
+			padding:0 10px;
+			margin:10px;
+			float:left;<!--清除浮动的第三种方法：伪元素选择器法；用after伪元素选择器清除浮动-->
+		}
+		
+		</style>
+	</head>
+	<body>
+		<div id="child01">
+			<div id="child02">
+				<div class="one">box1</div>
+				<div class="two">box2</div>
+				<div class="three">box3</div>
+			</div>
+		</div>
+		<div id="child03">
+			<div id="child04">
+				<div class="one">box1</div>
+				<div class="two">box2</div>
+				<div class="three">box3</div>
+				<p></p>
+			</div>
+		</div>
+		<div id="child05">
+			<div id="child06">
+				<div class="one">box1</div>
+				<div class="two">box2</div>
+				<div class="three">box3</div>
+			</div>
+		</div>
+		<div id="child07">
+			<div id="child08">
+				<div class="one">box1</div>
+				<div class="two">box2</div>
+				<div class="three">box3</div>
+			</div>
+		</div>
+	</body>
+</html>

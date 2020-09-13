@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS3 3D 动画</title>
+		<style type="text/css">
+			#one{
+				width:100px;
+				height:100px;
+				border:1px solid #000000;
+				background-color: #00FFFF;
+				margin:20px;
+				animation:mydongman 5s;
+				-webkit-animation:mydongman 5s;<!--animation叫作“使用动画属性”，将@keyframes规则绑定动画之后给animation属性使用 然后规定时间-->
+			}
+			@keyframes mydongman{
+				0%{background:blue; }
+				50%{background:yellow; }
+				100%{background;pink; }
+			}<!--可以用from（0%）或者to（100%）-->
+			@-webkit-keyframes mydongman{
+				0%{background:blue;}
+				50%{background:yellow;}
+				100%{background;pink; }
+				}
+			#two{
+				width:100px;
+				height:100px;
+				border:1px solid #000000;
+				background-color: #00FFFF;
+				margin:20px;
+				position:relative;
+				animation-name: hanhan;
+				-webkit-animation-name: hanhan;<!--animation-name属性为动画添加变换的名称-->
+				animation-duration:5s;
+				-webkit-animation-duration:5s;<!--animation-duration属性为动画添加一个动画周期时间-->
+				animation-timing-function: ease;
+				-webkit-animation-timing-function: ease;<!--animation-timing-function属性为动画指定时间速度的曲线-->
+				animation-delay:0.2s;
+				-webkit-animation-delay:0.2s;<!--animation-delay属性为动画指定开始的时间-->
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;<!--animation属性为动画指定播放的次数-->
+				animation-direction: reverse;
+				-webkit-animation-direction: alternate;<!--animation-diretion属性为动画播放的方向，反向为reverse属性值-->
+			}
+			@keyframes hanhan{
+				0%{background-color: pink;left:0px;top:0px;}
+				25%{background-color: blue;left:200px;top:0px;}
+				50%{background-color: green;left:200px;top:200px;}
+				75%{background-color: yellow;left:0px;top:200px;}
+				100%{background-color: red;left:0px;top:0px;}
+			}
+			@-webkit-keyframes hanhan{
+				0%{background-color: pink;left:0px;top:0px;}
+				25%{background-color: blue;left:200px;top:0px;}
+				50%{background-color: green;left:200px;top:200px;}
+				75%{background-color: yellow;left:0px;top:200px;}
+				100%{background-color: pink;left:0px;top:0px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="one">
+			啊康
+		</div>
+		<div id="two">
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.two{
+				background-image: url(../image/123.jpg);
+				color: lightgoldenrodyellow;
+			}
+			table .child01{
+				background-color: #FFFF00;
+				border-color: mistyrose;
+				border-radius: 5px/5px;/*WEOQWIEOQW*/
+			}
+		</style>
+	</head>
+	<body>
+		<table class="two" border="5px" cellspacing="25px" cellpadding="20px"><!--cellspacing属性为表格外框与表格的距离，cellpadding属性为表格内的内边距 单位：px-->
+			<tr><th>Header</th><th>Header</th><th>Header</th><th>Header</th></tr>
+			<tr><td>Data</td><td>Data</td><td>Data</td><td>Data</td></tr>
+		</table>
+		<table class="one" border="5px" cellspacing="25px" cellpadding="20px">
+			<caption>洪小伟</caption>
+			<tr><th class="child01">Header</th><th>Header</th><th>Header</th><th>Header</th></tr>
+			<tr><td>Data</td><td>Data</td><td>Data</td><td>&nbsp;</td></tr>
+		</table>
+		<table bordercolor="hotpink" border="5px" cellspacing="25px" cellpadding="20px">
+			<tr><th colspan="2">Header</th><th>Header</th><th>Header</th><th>Header</th></tr>
+			<tr><td>Data</td><td>Data</td><td>Data</td><td>Data</td></tr><!--表格中跨列属性colspan 单位：数值 可以跨几列-->
+		</table>
+		<table  border="5px" cellspacing="25px" cellpadding="20px">
+			<tr><th rowspan="2">Header</th><th>Header</th><th>Header</th><th>Header</th></tr>
+			<tr><td>Data</td><td>Data</td><td>Data</td><td>Data</td></tr><!--rowspan属性为跨行属性 单位：数值 可跨几行-->
+		</table>
+	</body>
+</html>

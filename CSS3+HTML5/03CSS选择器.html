@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>03CSS选择器</title>
+		<style type="text/css">
+			p{
+				color: red;
+				font-size: 30px;<!--标记选择器--直接使用标签选择-->
+			}
+			.one{
+				color: #00FFFF;
+				font-size: 40px;<!--类选择器-->
+			}
+			#one{
+				color:pink;
+				font-size: 45px;<!--id选择器-->
+			}
+			p.one{
+				color: brown;
+				font-size: 48px;<!--标签指定式选择器-->
+			}
+			h2 strong{
+				color:orangered;<!--后代选择器-->
+				font-size: 55px;
+			}
+			*{
+				color: #FF4500;
+				font-size: 60px;<!--通配选择器-->
+			}
+			p.three,h2.three,h3.three{
+				color: crimson;
+				font-size: 66px;<!--并集选择器-->
+			}
+		</style>
+	</head>
+	<body>
+		<p>你是谁？</p>
+		<p class="one">你在哪？</p>
+		<p id="one">你在干什么？</p>
+		<h2 class="one">你过的还好么？</h2>
+		<h2 id="one">有人<strong>爱你</strong>么？</h2>
+		<h3>世界你好啊!</h3>
+		<h2 class="three">感受活着的意义</h2>
+		<h3 class="three">爱人的心每天都要有</h3>
+		<p class="three">你是最好的！</p>
+	</body>
+</html>

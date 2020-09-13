@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS3盒子阴影属性与box-sizing属性</title>
+		<style type="text/css">
+			div{
+				width:200px;
+				height:200px;
+				background-color: #FF1493;
+				border:1px solid #8B0000;
+				padding:20px 20px;
+				margin:30px auto;
+				border-radius:50%/50%;
+				box-shadow:5px 5px 10px 2px #8B0000 ;/*box-shadow盒子的阴影属性，按照水平位置 垂直位置 模糊半径 阴影扩展半径 阴影的颜色 内阴影（inset）/外阴影默认*/
+			}
+			p{
+				width:200px;
+				height:200px;
+				background-color: #FF1493;
+				border:10px solid #8B0000;
+				padding:20px 20px;
+			}
+			p.one{
+				box-sizing: content-box;/*当属性值为content-box时，border边框属性padding内边距属性不被包括在宽高之内*/
+			}
+			p.two{
+				box-sizing: border-box;/*当属性值为border-box时，border边框属性padding内边距属性包括在宽高之内*/
+			}
+		</style>
+	</head>
+	<body>
+		<div ></div>
+		<p class="one"></p>
+		<p class="two"></p>
+	</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>06盒子元素的定位</title>
+		<style type="text/css">
+		.father{
+			width:250px;
+			height:300px;
+			border:1px solid #8B0000;
+			background-color: #87CEEB;
+			margin:10px;
+		}
+	#child01{
+		width:60px;
+		height:30px;
+		border:1px solid #8B0000;
+		background-color:yellow ;
+	    padding:2px;
+		margin:8px;
+	}
+	#child02{
+		width:60px;
+		height:30px;
+		border:1px solid #8B0000;
+		background-color:yellow ;
+	    padding:2px;
+		margin:8px;
+		position:relative;
+		left:100px;
+		top:150px;
+	}
+	#child03{
+		width:60px;
+		height:30px;
+		border:1px solid #8B0000;
+		background-color:yellow ;
+	    padding:2px;
+		margin:8px;/*标准文档流下的相对定位 position定位属性，属性值为相对定位relative只在文档里移动*/
+	}
+		
+		
+		.father01{
+			width:250px;
+			height:300px;
+			border:1px solid #8B0000;
+			background-color: #87CEEB;
+			margin:10px;
+		}
+		.child01{
+			width:60px;
+			height:30px;
+			border:1px solid #8B0000;
+			background-color:yellow ;
+		    padding:2px;
+			margin:8px;
+		}
+		.child02{
+			width:60px;
+			height:30px;
+			border:1px solid #8B0000;
+			background-color:yellow ;
+		    padding:2px;
+			margin:8px;
+			position:absolute;
+			top:340px;
+			left:250px;
+		}
+		.child03{
+			width:60px;
+			height:30px;
+			border:1px solid #8B0000;
+			background-color:yellow ;
+		    padding:2px;
+			margin:8px;/*脱离标准文档流的绝对定位 position定位属性 ，属性值绝对定位absolute 以窗口为基准*/
+		}
+		
+		
+		.father02{
+				width:250px;
+				height:300px;
+				border:1px solid #8B0000;
+				background-color: #87CEEB;
+				margin:10px;
+				position:relative;
+			}
+		#child04{
+			width:60px;
+			height:30px;
+			border:1px solid #8B0000;
+			background-color:yellow ;
+		    padding:2px;
+			margin:8px;
+		}
+		#child05{
+			width:60px;
+			height:30px;
+			border:1px solid #8B0000;
+			background-color:yellow ;
+		    padding:2px;
+			margin:8px;
+			position:absolute;
+			top:200px;
+			left:150px;
+		}
+		#child06{
+			width:60px;
+			height:30px;
+			border:1px solid #8B0000;
+			background-color:yellow ;
+		    padding:2px;
+			margin:8px;/*脱离标准文档流的绝对定位 position定位属性 ，属性值绝对定位absolute 以窗口为基准 若要以标准文档流那么要在父元素里加加上相对定位*/
+		}
+		
+		
+		.father03{
+				width:250px;
+				height:300px;
+				border:1px solid #8B0000;
+				background-color: #87CEEB;
+				margin:10px;
+				position:relative;
+			}
+		#child07{
+			width:60px;
+			height:30px;
+			border:1px solid #8B0000;
+			background-color:yellow ;
+		    padding:2px;
+			margin:8px;
+			position:absolute;
+			top:180px;
+			left:140px;
+			z-index:3;
+		}
+		#child08{
+			width:60px;
+			height:30px;
+			border:1px solid #8B0000;
+			background-color:yellow ;
+		    padding:2px;
+			margin:8px;
+			position:absolute;
+			top:200px;
+			left:150px;
+			z-index:2;
+		}
+		#child09{
+			width:60px;
+			height:30px;
+			border:1px solid #8B0000;
+			background-color:yellow ;
+		    padding:2px;
+			margin:8px;
+			position:absolute;
+			top:190px;
+			left:90px;
+			z-index:1;/*层叠属性z-index，属性值的大小决定了其是否在前在后 单位值为数值*/
+		}
+		
+		
+		.father04{
+				width:250px;
+				height:300px;
+				border:1px solid #8B0000;
+				background-color: #87CEEB;
+				margin:10px;
+			}
+		#child10{
+			width:60px;
+			height:30px;
+			border:1px solid #8B0000;
+			background-color:yellow ;
+		    padding:2px;
+			margin:8px;
+			position:fixed;
+			top:400px;
+			left:100px;/*固定定位fixed属性值 定位属性为position 以窗口为基准，不受滚动条的限制*/
+		}
+		</style>
+	</head>
+	<body>
+		<div class="father">
+			<div id="child01">child01</div>
+			<div id="child02">child02</div>
+			<div id="child03">child03</div>
+		</div>
+		<div class="father01">
+			<div class="child01">child01</div>
+			<div class="child02">child02</div>
+			<div class="child03">child03</div>
+		</div>
+		<div class="father02">
+			<div id="child04">child01</div>
+			<div id="child05">child02</div>
+			<div id="child06">child03</div>
+		</div>
+		<div class="father03">
+			<div id="child07">child01</div>
+			<div id="child08">child02</div>
+			<div id="child09">child03</div>
+		</div>
+		<div class="father04">
+			<div id="child10">child01</div>
+		</div>
+	</body>
+</html>

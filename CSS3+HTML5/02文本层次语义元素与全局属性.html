@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>文本层次语义元素与全局属性</title>
+	</head>
+	<body>
+		<p>  一个<mark>善良的人</mark>，就象一盏明灯，既照亮了周围的人，
+		也温暖了自己，善良无须灌输和强迫，
+		只会相互<mark>感染</mark>和<mark>传播</mark>。所以，做人不一定要顶天立地，
+		轰轰烈烈，但一定要善良真诚。</p><!--高亮显示部分文本--mark元素的应用-->
+		
+		
+		<p>也许越是美丽就越是脆弱，就像盛夏的泡沫。</p>
+		<cite>--明晓溪《泡沫之夏》</cite><!--可以创建一个引用标记，用于对文档参考文献的引用说明
+		--cite元素的使用-->
+		
+		
+		<p>我们早上<time>9:00</time>开始上班</p><!--时间元素time,用于对时间和日
+		期的定义及其属性datetime和pubdate的运用-->
+		<p>今年的<time datetime="2018-10-1">十一</time>准备去旅游</p>
+		<p><time datetime="2018-08-22" pubdate="true">本消息发布于2018-08-22</time></p>
+		
+		
+		<p><img src="../image/3.png" draggable="true" ></p><!--拖动属性，属性值为true和flase-->
+		<p><img src="../image/5.jpg" hidden="flase" ></p><!--隐藏属性，属性值为true和Flase-->
+		<p contenteditable="true">也许越是美丽就越是脆弱，就像盛夏的泡沫。</p><!--编辑属性，属性值为true和Flase-->
+		<h3>输入框语法检测</h3><!--文本用户输入内容是否检查--spellcheck属性和文本框textarea元素的使用--属性值为true和Flase-->
+		<p>spellcheck属性的值为true</p>
+		<textarea spellcheck="true">
+		html5</textarea>
+		<textarea spellcheck="false">
+		HTML5</textarea>
+	</body>
+</html>

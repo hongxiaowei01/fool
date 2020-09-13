@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>css-3d-盒子</title>
+<meta charset="utf-8" />
+<style>
+
+
+.css3d {
+position: absolute;
+left: 50%;
+top: 50%;
+width: 200px;
+height: 200px;
+margin-left: -100px;
+margin-top: -100px;
+transform: rotate(0deg);
+animation: aniTo 5s linear infinite;
+transform-style: preserve-3d;
+}
+
+.css3d > div {
+position: absolute;
+width: 200px;
+height: 200px;
+background: rgba(0,0,0,0.4);
+border: 1px solid rgba(3, 255, 224, 0.5);
+border-radius: 10%;
+text-align: center;
+line-height: 200px;
+font-size: 100px;
+font-weight: bold;
+color: #FFF;
+}
+.top {
+transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+transform: rotateX(90deg) translateZ(-100px);
+}
+
+.left {
+transform: rotateY(90deg) translateZ(100px);
+}
+
+.right {
+transform: rotateY(90deg) translateZ(-100px);
+}
+
+.qian {
+transform: rotateZ(0deg) translateZ(100px);
+}
+
+.hou {
+transform: rotateZ(0deg) translateZ(-100px);
+}
+
+@keyframes aniTo {
+0% {
+transform: rotateX(0deg) rotateY(0deg);
+}
+
+100% {
+transform: rotateX(360deg) rotateY(360deg);
+}
+}
+
+</style>
+</head>
+<body>
+<div class="stage">
+<div class="css3d">
+<div class="top">1</div>
+<div class="bottom">2</div>
+<div class="left">3</div>
+<div class="right">4</div>
+<div class="qian">5</div>
+<div class="hou">6</div>
+</div>
+</div>
+</body>
+</html>

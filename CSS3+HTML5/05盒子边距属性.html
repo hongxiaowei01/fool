@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>05盒子边距属性</title>
+		<style type="text/css">
+			div{
+				width:18.75rem;
+				height:300px;
+				background-color:#FFC0CB;
+				border:15px solid #8B0000;
+				padding-top:20px;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;<!--内边距单边样式设置-->
+			}
+			p.one{
+				width:300px;
+				height:300px;
+				background-color:#ADFF2F;
+				border: 10px solid #008000;
+				padding:20px 20px;<!--综合样式，还有一个值四边，两个值上下 左右，三个值上 左右 下，四个值上 右 下 左-->
+			}
+			p.two{
+				width:300px;
+				height:300px;
+				background-color:#ADFF2F;
+				border: 10px solid #008000;
+				padding:20px 20px;
+				margin-top:30px;
+				margin-right:auto;
+				margin-bottom:40px;
+				margin-left:auto;<!--外边距单边样式设置-->
+			}
+			p.three{
+				width:300px;
+				height:300px;
+				background-color:#ADFF2F;
+				border: 10px solid #008000;
+				padding:20px 20px;
+				margin:30px auto;<!--综合样式，还有一个值四边，两个值上下 左右(为auto 文本居中)，三个值上 左右 下，四个值上 右 下 左 -->
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>我喜欢那些闪光的东西，比如冬日的雪花，
+		天上的星星，还有你的眼睛</p>
+		</div>
+		<p class="one">我喜欢那些闪光的东西，比如冬日的雪花，天上
+		的星星，还有你的眼睛</p>
+		<p class="two">我喜欢那些闪光的东西，比如冬日的雪花，天上
+		的星星，还有你的眼睛</p>
+		<p class="three">我喜欢那些闪光的东西，比如冬日的雪花，天上
+		的星星，还有你的眼睛</p>
+	</body>
+</html>

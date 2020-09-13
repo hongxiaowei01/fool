@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS3 图片 响应式图片与图片滤镜</title>
+		<style type="text/css">
+			.one{
+				width:20%;
+				height:20%;
+			}
+			.two{
+				width:399px;
+				height:auto;
+				filter:blur(2px);/*blur属性为图像添加高斯模糊 单位为px*/
+			}
+			.three{
+				width:399px;
+				height:auto;
+				filter:brightness(150%);/*brightness属性为图像添加亮度 单位为百分比*/
+			}
+			.four{
+				width:399px;
+				height:auto;
+				filter:grayscale(30%);/*grayscale属性为图像添加灰度 单位为百分比*/
+			}
+			.five{
+				width:399px;
+				height:auto;
+				filter:contrast(170%);/*contrast属性为图像添加对比度 单位为百分比*/
+			}
+			.six{
+				width:399px;
+				height:auto;
+				filter:saturate(49%);/*saturate属性为图像添加饱和度 单位为百分比*/
+			}
+			.seven{
+				width:399px;
+				height:auto;
+				filter:invert(100%);/*invert属性为图像添加反转输入图像 单位为百分比*/
+			}
+			.eight{
+				width:399px;
+				height:auto;
+				filter:hue-rotate(45deg);/*hue-rotate属性为图像添加应用色旋转 单位角度值deg*/
+			}
+			.nine{
+				width:399px;
+				height:auto;
+				filter: sepia(100%);/*sepia属性为图像添加深褐色 单位为百分比%*/
+			}
+		</style>
+	</head>
+	<body>
+		<p>那些说给树听的话，嵌在树的年轮里，随流年一点一点长成参天的回忆。<img class="one" src="../image/ab46874d40721cd3017f9bde06600a71.jpg" ></p>
+		<img  class="two" src="../image/123.jpg" >
+		<img  class="three" src="../image/123.jpg" >
+		<img  class="four" src="../image/123.jpg" >
+		<img  class="five" src="../image/123.jpg" >
+		<img  class="six" src="../image/123.jpg" >
+		<img  class="seven" src="../image/123.jpg" >
+		<img  class="eight" src="../image/123.jpg" >
+		<img  class="nine" src="../image/123.jpg" >
+	</body>
+</html>

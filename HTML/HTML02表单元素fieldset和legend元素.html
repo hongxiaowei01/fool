@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>02表单元素 基础元素</title>
+		<style type="text/css">
+		body{
+			background-color: forestgreen;
+		}
+		#fieldset{
+			background-color: #87CEEB;
+		}
+		#one{
+			color: hotpink;
+		}
+		.one{
+			background-image: url(../image/123.jpg);
+			background-size: 192px 108px;
+			opacity: 0.8;
+			color: #87CEEB;
+		}
+		</style>
+	</head>
+	<body>
+		<form action="" method="post">
+			<fieldset id="fieldset">
+				<legend id="one">个人信息</legend>
+				姓名：<input type="text" name="xingming" value="" required="required"/><br>
+				邮箱：<input type="email" name="youxiang" />
+			</fieldset>
+		</form><br><!--表单的包含框fieldset元素，legend元素为fieldset元素添加标题-->
+		
+		<textarea  class="one" type="text" rows="20" placeholder="书写你未来..."></textarea>
+		<!--文本框，textarea元素 cols为列数 rows为行数。-->
+		<form action="" method="post">
+			<select>
+				<optgroup label="手机品牌">
+					<option value ="vivo">vivo</option>
+					<option value ="小米">小米</option>
+				</optgroup>
+				<optgroup label="电脑品牌">
+					<option value ="华为MagicBook">华为MagicBook</option>
+					<option value ="外星人">外星人</option>
+				</optgroup>
+			</select><!--select元素为下拉列表元素，option元素为select添加一个选项，optground元素为select添加一个选项组-->
+		</form><br><br><br><br><br><br />
+		<form action="" method="post">
+			<input list="browsers" name="browser"/>
+			<datalist id="browsers">
+				<option value ="小米">小米</option>
+				<option value ="华为">华为</option>
+				<option value ="苹果">苹果</option>
+				<option value ="vivo">vivo</option>
+				<option value ="诺基亚">诺基亚</option>
+			</datalist>
+			<input type="submit"/>
+		</form><!--datalist元素为select元素下拉元素和textarea元素结合-->
+	</body>
+</html>

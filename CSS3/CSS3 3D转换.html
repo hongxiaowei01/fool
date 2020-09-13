@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS3 3D转换</title>
+		<style type="text/css">
+			div{
+				background-color: #87CEEB;
+				border:3px solid #ccc;
+				width:200px;
+				height:200px;
+				margin:20px;
+			}
+			#one{
+				transform:rotatex(50deg);
+				-webkit-transform:rotatex(50deg);
+				-moz-transform:rotatex(50deg)
+			}
+			#two{
+				transform:rotatey(50deg);
+				-webkit-transform:rotatey(50deg);
+				-moz-transform:rotatey(50deg);
+			}
+			#three{
+				transform:rotatez(20deg);
+				-ms-transform:rotatez(20deg);
+				-webkit-transform:rotatez(20deg);
+			}
+			#four{
+				transform:scale3d(2,1,2) ;
+				-webkit-transform:scale3d(2,1,2);
+				-moz-transform:scale3d(2,1,2);
+			}
+			#five{
+				transform:translate3d(10px,20px,30px);
+				-webkit-transform:translate3d(10px,20px,30px);
+				-moz-transform:translate3d(10px,20px,30px);
+			}
+			#six{
+				transform-origin:0,0;
+				transform:rotateX(40deg) rotateY(20deg) rotateZ(10deg);
+				-webkit-transform-origin:0,0;
+				-webkit-transform:rotateX(40deg) rotateY(20deg) rotateZ(10deg);
+				}
+			#seven{
+				transform:rotatey(60deg);
+				transform-style: preserve-3d;
+				-webkit-transform:rotatey(60deg);
+				-webkit-transform-style: preserve-3d;
+			}
+		    div#seven .one1{
+				width:200px;
+				height:200px;
+				border:1px solid red;
+				background-color: #228B22;
+				transform:rotatey(-60deg);
+				transform-style:preserve-3d;
+				-webkit-transform:rotatey(-60deg);
+				-webkit-transform-style:preserve-3d;
+			}
+			#eight{
+				position: relative;
+				width:208px;
+				height:208px;
+				border: 1px solid black;
+				background-color: white;
+				margin:4px;
+				padding:4px;
+				perspective: 200;
+				-webkit-perspective: 200;
+				
+			}
+			#one1{
+				padding:10px;
+				width:150px;
+				height:150px;
+				border:2px solid black;
+				background-color: #EE82EE;
+				position:absolute;
+				transform:rotatex(80deg);
+				-webkit-transform:rotatex(80deg);
+			}
+			#nine{
+				position: relative;
+				width:208px;
+				height:208px;
+				border: 1px solid black;
+				background-color: white;
+				margin:4px;
+				padding:4px;
+				perspective: 200;
+				-webkit-perspective: 200;
+				perspective-origin:right bottom;
+				-webkit-perspective-origin:right bottom;
+			}
+			#nine1{
+				padding:10px;
+				width:150px;
+				height:150px;
+				border:2px solid black;
+				background-color: #EE82EE;
+				position:absolute;
+				transform:rotatex(80deg);
+				-webkit-transform:rotatex(80deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="one">
+			  生活总是会抛给我们一些巨大的糟糕的挫折，
+			  这很容易让我们放弃对我们所坚持的一切的信仰。
+			  我觉得放弃对许多事情的信念能够，
+			  但是绝对不要放弃对自己的信仰。要始终相信自己，
+			  相信你会得到你想要的一切如果你拥有了这样的思想倾向.
+		</div>
+		<div id="two">
+			生活总是会抛给我们一些巨大的糟糕的挫折，
+			这很容易让我们放弃对我们所坚持的一切的信仰。
+			我觉得放弃对许多事情的信念能够，
+			但是绝对不要放弃对自己的信仰。要始终相信自己，
+			相信你会得到你想要的一切如果你拥有了这样的思想倾向.
+		</div>
+		<div id="three">
+			2222222222
+		</div>
+		<div id="four">
+			生活总是会抛给我们一些巨大的糟糕的挫折，
+			这很容易让我们放弃对我们所坚持的一切的信仰。
+			我觉得放弃对许多事情的信念能够，
+			但是绝对不要放弃对自己的信仰。要始终相信自己，
+			相信你会得到你想要的一切如果你拥有了这样的思想倾向.
+		</div>
+		<div id="five">
+			生活总是会抛给我们一些巨大的糟糕的挫折，
+			这很容易让我们放弃对我们所坚持的一切的信仰。
+			我觉得放弃对许多事情的信念能够，
+			但是绝对不要放弃对自己的信仰。要始终相信自己，
+			相信你会得到你想要的一切如果你拥有了这样的思想倾向
+		</div>
+		<div id="six">
+			hi hahahah
+		</div>
+		<div id="seven">hello00000
+			<div class="one1">
+				hihihihhihihih
+			</div>
+		</div>
+		<div id="eight">
+			<div id="one1">
+				生活总是会抛给我们一些巨大的糟糕的挫折，
+				这很容易让我们放弃对我们所坚持的一切的信仰。
+			</div>
+		</div>
+		<div id="nine">
+			<div id="nine1">
+				生活总是会抛给我们一些巨大的糟糕的挫折，
+				这很容易让我们放弃对我们所坚持的一切的信仰。
+			</div>
+		</div>
+		<div id="ten">
+		</div>
+	</body>
+</html>
